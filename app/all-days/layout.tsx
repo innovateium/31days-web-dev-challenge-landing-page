@@ -1,17 +1,14 @@
 import Footer from '@/components/footer/footer';
 import Header from '@/components/header/header';
-import Hero from '@/components/hero/hero';
-import RoadMaps from '@/components/roadmaps/roadmaps';
 import GridBackground from '@/components/ui/gridBackground';
 
-export default function Home() {
+export default function AllDaysLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen w-full relative bg-white dark:bg-slate-950 text-slate-950 dark:text-white transition-colors duration-500 selection:bg-[#ff6000]/30 font-sans">
       <GridBackground />
       <div className="relative z-10">
         <Header />
-        <Hero />
-        <RoadMaps />
+        {children}
         <Footer />
       </div>
     </div>
