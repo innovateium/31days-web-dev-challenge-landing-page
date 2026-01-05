@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 31 Days of Web Development Challenge Landing Page
 
-## Getting Started
+Welcome to the official landing page for the **31 Days of Web Development Challenge**, an initiative by **Innovateium** designed to push the boundaries of modern web interfaces, interactivity, and design.
 
-First, run the development server:
+![31 Days Challenge](public/og-image.webp)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Overview
+
+This repository contains the source code for the landing page that showcases 31 unique web development projects. Each day of the challenge focuses on a specific theme, ranging from high-polish UI components to complex web applications and next-gen technologies like 3D rendering and AI integration.
+
+The landing page itself is a testimonial to modern web standards, featuring:
+
+- **Interactive Bento Grid**: A dynamic layout showcasing all 31 challenges.
+- **Project Modals**: Detailed views for each challenge, including concepts, technologies used, and live links.
+- **Premium Aesthetics**: A sleek dark/light mode interface with glassmorphism, smooth animations, and a focus on visual excellence.
+- **Responsive Design**: Fully optimized for a seamless experience across all device sizes.
+
+## 🛠️ Tech Stack
+
+Built with a modern and high-performance stack:
+
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [Motion (Framer Motion)](https://motion.dev/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Theming**: [next-themes](https://github.com/pacocoursey/next-themes)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+## 📅 The Journey
+
+The challenge is structured into five key phases:
+
+1.  **Week 1: The Building Blocks**: High-polish UI, interactivity, and CSS mastery.
+2.  **Week 2: Small Business Essentials**: Conversion optimization and rapid layout deployment.
+3.  **Week 3: Complexity & Architecture**: Multi-page structures and data organization.
+4.  **Week 4: Web Applications**: JavaScript logic and API integration.
+5.  **Wildcard Days: The Future**: 3D rendering, AI, and cutting-edge web tech.
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/innovateium/31dayslanding.git
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Run the development server:
+    ```bash
+    npm run dev
+    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 About Innovateium
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Innovateium is a digital solutions provider focused on creating impactful software and helping developers grow through challenges and community-driven projects.
 
-## Learn More
+- **Website**: [innovateium.co.bw](https://innovateium.co.bw)
+- **GitHub**: [@innovateium](https://github.com/innovateium)
+- **Instagram**: [@innovateium](https://www.instagram.com/innovateium)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by [Innovateium](https://innovateium.co.bw) in Botswana 🇧🇼
