@@ -4,7 +4,7 @@ import { HugeIcon } from '../ui/huge-icon';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-100 z-20 dark:border-slate-900 py-16 px-6 text-center">
+    <footer className="border-t border-slate-100 z-20 dark:border-slate-900 py-8 px-6 text-center">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
         <Image
           src="/logo.png"
