@@ -1,5 +1,6 @@
-import { Facebook, Github, Globe2, Instagram, Mail } from 'lucide-react';
+import { Facebook01Icon, GithubIcon, GlobeIcon, InstagramIcon, Mail01Icon } from '@hugeicons/core-free-icons';
 import Image from 'next/image';
+import { HugeIcon } from '../ui/huge-icon';
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
             className="text-slate-400 hover:text-[#1877F2] transition-colors transform hover:scale-110 duration-300"
             aria-label="Our Facebook page"
           >
-            <Facebook size={24} />
+            <HugeIcon icon={Facebook01Icon} size={24} />
           </a>
           <a
             href="https://www.instagram.com/innovateium"
@@ -33,7 +34,7 @@ export default function Footer() {
             className="text-slate-400 hover:text-[#E4405F] transition-colors transform hover:scale-110 duration-300"
             aria-label="Our Instagram page"
           >
-            <Instagram size={24} />
+            <HugeIcon icon={InstagramIcon} size={24} />
           </a>
           <a
             href="https://github.com/innovateium"
@@ -42,7 +43,7 @@ export default function Footer() {
             className="text-slate-400 hover:text-[#181717] dark:hover:text-white transition-colors transform hover:scale-110 duration-300"
             aria-label="Our Github page"
           >
-            <Github size={24} />
+            <HugeIcon icon={GithubIcon} size={24} />
           </a>
           <a
             href="https://innovateium.co.bw"
@@ -51,14 +52,14 @@ export default function Footer() {
             className="text-slate-400 hover:text-[#ff6000] transition-colors transform hover:scale-110 duration-300"
             aria-label="Our website"
           >
-            <Globe2 size={24} />
+            <HugeIcon icon={GlobeIcon} size={24} />
           </a>
           <a
             href="mailto:info@innovateium.co.bw"
             className="text-slate-400 hover:text-[#ff6000] transition-colors transform hover:scale-110 duration-300"
             aria-label="Email us"
           >
-            <Mail size={24} />
+            <HugeIcon icon={Mail01Icon} size={24} />
           </a>
         </div>
         <div className="text-[10px] text-slate-400 dark:text-slate-700 font-bold uppercase tracking-[0.4em]">

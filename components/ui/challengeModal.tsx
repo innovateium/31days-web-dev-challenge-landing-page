@@ -1,9 +1,10 @@
 'use client';
 
 import { ChallengeItem } from '@/types/challengeItem';
+import { ArrowUpRight01Icon, Cancel01Icon, ChipIcon } from '@hugeicons/core-free-icons';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Cpu, ExternalLink, X } from 'lucide-react';
 import { useEffect } from 'react';
+import { HugeIcon } from './huge-icon';
 
 interface ChallengeModalProps {
   challenge: ChallengeItem | null;
@@ -26,6 +27,8 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
 
   if (!challenge) return null;
 
+  const Icon = challenge.icon;
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -44,15 +47,16 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="relative w-full max-w-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2.5rem] overflow-hidden shadow-2xl overflow-y-auto max-h-[90vh]"
+            className="relative w-full max-w-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2.5rem] shadow-2xl overflow-y-auto max-h-[90vh]"
           >
             {/* Header / Close Button */}
             <div className="absolute top-6 right-6 z-10">
               <button
                 onClick={onClose}
                 className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-[#ff6000] transition-colors"
+                aria-label="Close modal"
               >
-                <X size={20} />
+                <HugeIcon icon={Cancel01Icon} size={20} />
               </button>
             </div>
 
@@ -61,7 +65,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
               {/* Top Section: Day & Icon */}
               <div className="flex items-center gap-6">
                 <div className="h-16 w-16 rounded-2xl bg-[#ff6000]/10 flex items-center justify-center text-[#ff6000]">
-                  <challenge.icon size={32} />
+                  <Icon size={32} />
                 </div>
                 <div>
                   <span className="text-[#ff6000] font-mono font-black text-sm tracking-widest uppercase">
@@ -90,7 +94,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
               {/* Technologies Section */}
               <div className="space-y-4">
                 <h3 className="text-lg font-bold flex items-center gap-2">
-                  <Cpu className="text-[#ff6000]" size={20} />
+                  <HugeIcon icon={ChipIcon} className="text-[#ff6000]" size={20} />
                   Technologies Used
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -113,7 +117,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 bg-[#ff6000] text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#ff8000] hover:shadow-xl transition-all active:scale-95"
                 >
-                  View Live Demo <ExternalLink size={18} />
+                  View Live Demo <HugeIcon icon={ArrowUpRight01Icon} size={18} />
                 </a>
                 <button
                   onClick={onClose}
@@ -125,8 +129,8 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
             </div>
 
             {/* Decorative Background Element */}
-            <div className="absolute -bottom-20 -right-20 opacity-[0.03] dark:opacity-[0.05] pointer-events-none -rotate-12">
-              <challenge.icon size={300} />
+            <div className="absolute -bottom-20 -right-20 opacity-[0.03] dark:opacity-[0.05] pointer-events-none -rotate-12 overflow-hidden">
+              <Icon size={300} />
             </div>
           </motion.div>
         </div>

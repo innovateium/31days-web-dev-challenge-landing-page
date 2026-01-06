@@ -1,10 +1,11 @@
 'use client';
 
-import { ExternalLink, Github } from 'lucide-react';
+import { ArrowUpRight01Icon, GithubIcon } from '@hugeicons/core-free-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ThemeToggle } from '../theme/theme-toggle';
+import { HugeIcon } from '../ui/huge-icon';
 import Tooltip from '../ui/tooltip';
 
 export default function Header() {
@@ -50,7 +51,7 @@ export default function Header() {
           rel="noopener noreferrer"
         >
           <div className="flex items-center gap-1">
-            Agency Website <ExternalLink size={12} />
+            Agency Website <HugeIcon icon={ArrowUpRight01Icon} size={16} />
           </div>
         </a>
         <Tooltip text="View Our GitHub Page">
@@ -61,7 +62,7 @@ export default function Header() {
             className="group relative h-10 w-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:bg-slate-200 dark:hover:bg-white/10 transition-all duration-300 text-slate-900 dark:text-white"
             aria-label="GitHub"
           >
-            <Github size={20} />
+            <HugeIcon icon={GithubIcon} size={20} />
           </a>
         </Tooltip>
         <Tooltip text="Theme">

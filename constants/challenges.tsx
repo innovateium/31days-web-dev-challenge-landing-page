@@ -1,60 +1,61 @@
 import {
-  AiChat01Icon,
-  BarChartIcon,
-  BinaryCodeIcon,
-  Briefcase01Icon,
-  CloudIcon,
-  CodeIcon,
-  Coffee01Icon,
-  DashboardSquare01Icon,
-  Dollar01Icon,
-  Dumbbell01Icon,
-  FlashIcon,
-  GlobeIcon,
-  HelpCircleIcon,
-  Layers01Icon,
-  Layout01Icon,
-  Location01Icon,
-  Mail01Icon,
-  NewspaperIcon,
-  PackageIcon,
-  PlayCircleIcon,
-  RefreshIcon,
-  RocketIcon,
-  Shield01Icon,
-  ShoppingBag01Icon,
-  Tag01Icon,
-  WorkHistoryIcon
+  AiChat01Icon as AiChat01IconData,
+  BarChartIcon as BarChartIconData,
+  BinaryCodeIcon as BinaryCodeIconData,
+  Briefcase01Icon as Briefcase01IconData,
+  CloudIcon as CloudIconData,
+  CodeIcon as CodeIconData,
+  Coffee01Icon as Coffee01IconData,
+  DashboardSquare01Icon as DashboardSquare01IconData,
+  Dollar01Icon as Dollar01IconData,
+  Dumbbell01Icon as Dumbbell01IconData,
+  FlashIcon as FlashIconData,
+  GlobeIcon as GlobeIconData,
+  HelpCircleIcon as HelpCircleIconData,
+  Layers01Icon as Layers01IconData,
+  Layout01Icon as Layout01IconData,
+  Location01Icon as Location01IconData,
+  Mail01Icon as Mail01IconData,
+  News01Icon as News01IconData,
+  PackageIcon as PackageIconData,
+  PlayCircleIcon as PlayCircleIconData,
+  RefreshIcon as RefreshIconData,
+  RocketIcon as RocketIconData,
+  Shield01Icon as Shield01IconData,
+  ShoppingBag01Icon as ShoppingBag01IconData,
+  Tag01Icon as Tag01IconData,
+  WorkHistoryIcon as WorkHistoryIconData
 } from '@hugeicons/core-free-icons';
 import { HugeIcon } from '../components/ui/huge-icon';
+import { ChallengeIconProps } from '../types/challengeItem';
 import { Week } from '../types/week';
 
-const ShieldCheck = (props: any) => <HugeIcon icon={Shield01Icon} {...props} />;
-const Tag = (props: any) => <HugeIcon icon={Tag01Icon} {...props} />;
-const Layout = (props: any) => <HugeIcon icon={Layout01Icon} {...props} />;
-const Mail = (props: any) => <HugeIcon icon={Mail01Icon} {...props} />;
-const BarChart3 = (props: any) => <HugeIcon icon={BarChartIcon} {...props} />;
-const History = (props: any) => <HugeIcon icon={WorkHistoryIcon} {...props} />;
-const RefreshCcw = (props: any) => <HugeIcon icon={RefreshIcon} {...props} />;
-const Briefcase = (props: any) => <HugeIcon icon={Briefcase01Icon} {...props} />;
-const Coffee = (props: any) => <HugeIcon icon={Coffee01Icon} {...props} />;
-const Rocket = (props: any) => <HugeIcon icon={RocketIcon} {...props} />;
-const Zap = (props: any) => <HugeIcon icon={FlashIcon} {...props} />;
-const MapPin = (props: any) => <HugeIcon icon={Location01Icon} {...props} />;
-const Globe = (props: any) => <HugeIcon icon={GlobeIcon} {...props} />;
-const Dumbbell = (props: any) => <HugeIcon icon={Dumbbell01Icon} {...props} />;
-const Layers = (props: any) => <HugeIcon icon={Layers01Icon} {...props} />;
-const ShoppingBag = (props: any) => <HugeIcon icon={ShoppingBag01Icon} {...props} />;
-const Newspaper = (props: any) => <HugeIcon icon={NewspaperIcon} {...props} />;
-const Monitor = (props: any) => <HugeIcon icon={DashboardSquare01Icon} {...props} />;
-const PlayCircle = (props: any) => <HugeIcon icon={PlayCircleIcon} {...props} />;
-const Code2 = (props: any) => <HugeIcon icon={CodeIcon} {...props} />;
-const Cloud = (props: any) => <HugeIcon icon={CloudIcon} {...props} />;
-const DollarSign = (props: any) => <HugeIcon icon={Dollar01Icon} {...props} />;
-const Binary = (props: any) => <HugeIcon icon={BinaryCodeIcon} {...props} />;
-const HelpCircle = (props: any) => <HugeIcon icon={HelpCircleIcon} {...props} />;
-const Box = (props: any) => <HugeIcon icon={PackageIcon} {...props} />;
-const Bot = (props: any) => <HugeIcon icon={AiChat01Icon} {...props} />;
+const ShieldCheck = (props: ChallengeIconProps) => <HugeIcon icon={Shield01IconData} {...props} />;
+const Tag = (props: ChallengeIconProps) => <HugeIcon icon={Tag01IconData} {...props} />;
+const Layout = (props: ChallengeIconProps) => <HugeIcon icon={Layout01IconData} {...props} />;
+const Mail = (props: ChallengeIconProps) => <HugeIcon icon={Mail01IconData} {...props} />;
+const BarChart3 = (props: ChallengeIconProps) => <HugeIcon icon={BarChartIconData} {...props} />;
+const History = (props: ChallengeIconProps) => <HugeIcon icon={WorkHistoryIconData} {...props} />;
+const RefreshCcw = (props: ChallengeIconProps) => <HugeIcon icon={RefreshIconData} {...props} />;
+const Briefcase = (props: ChallengeIconProps) => <HugeIcon icon={Briefcase01IconData} {...props} />;
+const Coffee = (props: ChallengeIconProps) => <HugeIcon icon={Coffee01IconData} {...props} />;
+const Rocket = (props: ChallengeIconProps) => <HugeIcon icon={RocketIconData} {...props} />;
+const Zap = (props: ChallengeIconProps) => <HugeIcon icon={FlashIconData} {...props} />;
+const MapPin = (props: ChallengeIconProps) => <HugeIcon icon={Location01IconData} {...props} />;
+const Globe = (props: ChallengeIconProps) => <HugeIcon icon={GlobeIconData} {...props} />;
+const Dumbbell = (props: ChallengeIconProps) => <HugeIcon icon={Dumbbell01IconData} {...props} />;
+const Layers = (props: ChallengeIconProps) => <HugeIcon icon={Layers01IconData} {...props} />;
+const ShoppingBag = (props: ChallengeIconProps) => <HugeIcon icon={ShoppingBag01IconData} {...props} />;
+const Newspaper = (props: ChallengeIconProps) => <HugeIcon icon={News01IconData} {...props} />;
+const Monitor = (props: ChallengeIconProps) => <HugeIcon icon={DashboardSquare01IconData} {...props} />;
+const PlayCircle = (props: ChallengeIconProps) => <HugeIcon icon={PlayCircleIconData} {...props} />;
+const Code2 = (props: ChallengeIconProps) => <HugeIcon icon={CodeIconData} {...props} />;
+const Cloud = (props: ChallengeIconProps) => <HugeIcon icon={CloudIconData} {...props} />;
+const DollarSign = (props: ChallengeIconProps) => <HugeIcon icon={Dollar01IconData} {...props} />;
+const Binary = (props: ChallengeIconProps) => <HugeIcon icon={BinaryCodeIconData} {...props} />;
+const HelpCircle = (props: ChallengeIconProps) => <HugeIcon icon={HelpCircleIconData} {...props} />;
+const Box = (props: ChallengeIconProps) => <HugeIcon icon={PackageIconData} {...props} />;
+const Bot = (props: ChallengeIconProps) => <HugeIcon icon={AiChat01IconData} {...props} />;
 
 export const WEEKS: Week[] = [
   {
@@ -71,7 +72,7 @@ export const WEEKS: Week[] = [
         link: 'https://wdc1.innovateium.co.bw',
         details:
           'A premium login interface featuring sophisticated frosted-glass effects, subtle backdrop blurs, and smooth state transitions. This component demonstrates the power of modern CSS/Tailwind for creating high-end aesthetic UIs.',
-        technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Lucide React']
+        technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Hugeicons']
       },
       {
         day: 2,
@@ -83,7 +84,7 @@ export const WEEKS: Week[] = [
         link: 'https://wdc2.innovateium.co.bw',
         details:
           'A clean and functional pricing section with a seamless monthly/yearly toggle. Each card features hover animations, badge indicators, and clear feature lists to maximize conversion potential.',
-        technologies: ['React', 'Lucide React', 'CSS Transitions', 'State Management']
+        technologies: ['React', 'Hugeicons', 'CSS Transitions', 'State Management']
       },
       {
         day: 3,
@@ -131,7 +132,7 @@ export const WEEKS: Week[] = [
         link: 'https://wdc6.innovateium.co.bw',
         details:
           'An infinite-loop slider that showcases customer testimonials with high-quality avatars and ratings. It utilizes smooth CSS animations for a continuous, non-intrusive review experience.',
-        technologies: ['React', 'CSS Keyframes', 'Lucide Icons']
+        technologies: ['React', 'CSS Keyframes', 'Hugeicons']
       },
       {
         day: 7,

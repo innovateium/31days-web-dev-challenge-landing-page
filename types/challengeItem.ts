@@ -1,11 +1,16 @@
-import { LucideIcon } from 'lucide-react';
+import React from 'react';
+
+export interface ChallengeIconProps {
+  size?: number | string;
+  className?: string;
+}
 
 export interface ChallengeItem {
   day: number;
   title: string;
   theme: string;
   size: string;
-  icon: LucideIcon;
+  icon: React.ComponentType<ChallengeIconProps>;
   concept: string;
   link?: string;
   details: string;

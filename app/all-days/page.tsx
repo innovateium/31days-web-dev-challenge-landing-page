@@ -1,13 +1,15 @@
 'use client';
 
 import ChallengeModal from '@/components/ui/challengeModal';
+import { HugeIcon } from '@/components/ui/huge-icon';
 import { WEEKS } from '@/constants/challenges';
 import { ChallengeItem } from '@/types/challengeItem';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight01Icon } from '@hugeicons/core-free-icons';
 import { useState } from 'react';
 
 export default function AllDaysPage() {
   const allDays = WEEKS.flatMap((week) => week.days);
+  console.log(allDays);
   const [selectedChallenge, setSelectedChallenge] = useState<ChallengeItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -67,7 +69,7 @@ export default function AllDaysPage() {
               </div>
 
               <div className="mt-8 flex items-center text-[#ff6000] font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0">
-                View Project <ArrowRight className="ml-2 w-4 h-4" />
+                View Project <HugeIcon icon={ArrowRight01Icon} className="ml-2 w-4 h-4" />
               </div>
 
               <div className="absolute -bottom-10 -right-10 text-slate-200 dark:text-slate-800/10 group-hover:text-[#ff6000]/5 group-hover:rotate-12 group-hover:scale-125 transition-all duration-700 pointer-events-none">

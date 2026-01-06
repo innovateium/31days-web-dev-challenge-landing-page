@@ -36,7 +36,10 @@ export const metadata: Metadata = {
     'botswana developer',
     'website development in botswana',
     'botswana software developer',
-    'sadc software developer'
+    'sadc software developer',
+    'system developer',
+    'local software developer',
+    'botswana website development'
   ],
   authors: [{ name: 'Innovateium', url: 'https://innovateium.co.bw' }],
   creator: 'Innovateium Pty Ltd',
