@@ -6,7 +6,7 @@ export interface ChallengeIconProps {
 }
 
 export interface ChallengeItem {
-  day: number;
+  day: string;
   title: string;
   theme: string;
   size: string;

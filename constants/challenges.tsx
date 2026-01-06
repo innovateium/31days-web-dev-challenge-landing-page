@@ -63,7 +63,7 @@ export const WEEKS: Week[] = [
     focus: 'High-polish UI, interactivity, CSS mastery, and animations.',
     days: [
       {
-        day: 1,
+        day: '01',
         title: 'Glassmorphism Login',
         theme: 'Components',
         concept: 'Stunning frosted-glass login/signup component.',
@@ -75,7 +75,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Lucide React']
       },
       {
-        day: 2,
+        day: '02',
         title: 'Interactive Pricing',
         theme: 'Components',
         concept: '3-tier pricing card set with Monthly/Yearly toggle.',
@@ -87,7 +87,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Lucide React', 'CSS Transitions', 'State Management']
       },
       {
-        day: 3,
+        day: '03',
         title: 'Advanced Mega-Menu',
         theme: 'Components',
         concept: 'Responsive rich-media menu with icons and images.',
@@ -99,7 +99,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Radix UI', 'Tailwind CSS', 'Responsive Design']
       },
       {
-        day: 4,
+        day: '04',
         title: 'The "Smart" Contact Form',
         theme: 'Components',
         concept: 'Multi-step wizard with progress bars and validation.',
@@ -111,7 +111,7 @@ export const WEEKS: Week[] = [
         technologies: ['React Hook Form', 'Zod', 'Framer Motion', 'React']
       },
       {
-        day: 5,
+        day: '05',
         title: 'Dashboard Widget',
         theme: 'Components',
         concept: 'Animated graph showing sales/users data.',
@@ -123,7 +123,7 @@ export const WEEKS: Week[] = [
         technologies: ['Recharts', 'React', 'Tailwind CSS', 'Data Vis']
       },
       {
-        day: 6,
+        day: '06',
         title: 'Social Proof Slider',
         theme: 'Components',
         concept: 'Infinite-scroll testimonial carousel.',
@@ -135,7 +135,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'CSS Keyframes', 'Lucide Icons']
       },
       {
-        day: 7,
+        day: '07',
         title: 'Theme Switcher',
         theme: 'Components',
         concept: 'Instant Dark/Light mode with local storage persistence.',
@@ -153,7 +153,7 @@ export const WEEKS: Week[] = [
     focus: 'Conversion optimization, storytelling, and rapid layout deployment.',
     days: [
       {
-        day: 8,
+        day: '08',
         title: 'Personal Portfolio',
         theme: 'Landing Pages',
         concept: 'Sleek single-page CV site for creatives.',
@@ -165,7 +165,7 @@ export const WEEKS: Week[] = [
         technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion']
       },
       {
-        day: 9,
+        day: '09',
         title: 'Restaurant Menu',
         theme: 'Landing Pages',
         concept: 'Visual-heavy page with parallax and categorized menu.',
@@ -177,7 +177,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Intersection Observer', 'Tailwind CSS']
       },
       {
-        day: 10,
+        day: '10',
         title: 'Hype Page',
         theme: 'Landing Pages',
         concept: 'Coming soon page with countdown and email capture.',
@@ -189,7 +189,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Date-fns', 'Tailwind CSS']
       },
       {
-        day: 11,
+        day: '11',
         title: 'Service Provider',
         theme: 'Landing Pages',
         concept: 'Trustworthy page for tradespeople with quote focus.',
@@ -201,7 +201,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Formik', 'Tailwind CSS']
       },
       {
-        day: 12,
+        day: '12',
         title: 'Real Estate Listing',
         theme: 'Landing Pages',
         concept: 'Property showcase with gallery grid and CTA.',
@@ -213,7 +213,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Grid Layout', 'Tailwind CSS']
       },
       {
-        day: 13,
+        day: '13',
         title: 'Charity Page',
         theme: 'Landing Pages',
         concept: 'Storytelling page with donation progress bars.',
@@ -225,7 +225,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Framer Motion', 'Tailwind CSS']
       },
       {
-        day: 14,
+        day: '14',
         title: 'Fitness Landing',
         theme: 'Landing Pages',
         concept: 'High-energy visuals with class timetable layout.',
@@ -243,7 +243,7 @@ export const WEEKS: Week[] = [
     focus: 'Multi-page structures, CMS-style layouts, and data organization.',
     days: [
       {
-        day: 15,
+        day: '15',
         title: 'Corporate Intranet',
         theme: 'Complex Sites',
         concept: 'Structured knowledge-base UI with sidebar.',
@@ -255,7 +255,7 @@ export const WEEKS: Week[] = [
         technologies: ['Next.js', 'Sidebar Logic', 'Search Filter']
       },
       {
-        day: 16,
+        day: '16',
         title: 'E-Comm Detail Page',
         theme: 'Complex Sites',
         concept: 'Product view with image zoom and variants.',
@@ -267,7 +267,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Context API', 'Hover Zoom']
       },
       {
-        day: 17,
+        day: '17',
         title: 'Travel Portal',
         theme: 'Complex Sites',
         concept: 'Search interface with date and guest filters.',
@@ -279,7 +279,7 @@ export const WEEKS: Week[] = [
         technologies: ['Date-fns', 'React-Day-Picker', 'Tailwind']
       },
       {
-        day: 18,
+        day: '18',
         title: 'News Magazine',
         theme: 'Complex Sites',
         concept: 'Grid-based newspaper layout with feature sections.',
@@ -291,7 +291,7 @@ export const WEEKS: Week[] = [
         technologies: ['CSS Grid', 'React', 'Typography']
       },
       {
-        day: 19,
+        day: '19',
         title: 'SaaS Home',
         theme: 'Complex Sites',
         concept: 'Modern tech landing with Bento grids.',
@@ -303,7 +303,7 @@ export const WEEKS: Week[] = [
         technologies: ['Next.js', 'Bento Grid', 'AOS Animations']
       },
       {
-        day: 20,
+        day: '20',
         title: 'LMS UI',
         theme: 'Complex Sites',
         concept: 'Course player with video and syllabus list.',
@@ -315,7 +315,7 @@ export const WEEKS: Week[] = [
         technologies: ['Video.js', 'State Management', 'React']
       },
       {
-        day: 21,
+        day: '21',
         title: 'Agency Portfolio',
         theme: 'Complex Sites',
         concept: 'Minimalist site with scroll-triggered animations.',
@@ -333,7 +333,7 @@ export const WEEKS: Week[] = [
     focus: 'JavaScript logic, API integration, and user interaction.',
     days: [
       {
-        day: 22,
+        day: '22',
         title: 'Weather Dashboard',
         theme: 'Web Apps',
         concept: 'API-driven current weather and 5-day forecast.',
@@ -345,7 +345,7 @@ export const WEEKS: Week[] = [
         technologies: ['Weather API', 'Axios', 'Chart.js', 'React']
       },
       {
-        day: 23,
+        day: '23',
         title: 'Kanban Board',
         theme: 'Web Apps',
         concept: 'Trello-style drag-and-drop task management.',
@@ -357,7 +357,7 @@ export const WEEKS: Week[] = [
         technologies: ['dnd-kit', 'React', 'Local Storage']
       },
       {
-        day: 24,
+        day: '24',
         title: 'Expense Tracker',
         theme: 'Web Apps',
         concept: 'Dynamic spending visualization with charts.',
@@ -369,7 +369,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Recharts', 'Form Logic']
       },
       {
-        day: 25,
+        day: '25',
         title: 'Markdown Editor',
         theme: 'Web Apps',
         concept: 'Real-time split-screen Markdown previewer.',
@@ -381,7 +381,7 @@ export const WEEKS: Week[] = [
         technologies: ['React-Markdown', 'Prism.js', 'React']
       },
       {
-        day: 26,
+        day: '26',
         title: 'Password Utility',
         theme: 'Web Apps',
         concept: 'Secure string generator with strength meter.',
@@ -393,7 +393,7 @@ export const WEEKS: Week[] = [
         technologies: ['Crypto API', 'React', 'Tailwind']
       },
       {
-        day: 27,
+        day: '27',
         title: 'Quiz Engine',
         theme: 'Web Apps',
         concept: 'Multi-question assessment with scoring logic.',
@@ -405,7 +405,7 @@ export const WEEKS: Week[] = [
         technologies: ['React', 'Timer Logic', 'State Machine']
       },
       {
-        day: 28,
+        day: '28',
         title: 'Currency/Crypto',
         theme: 'Web Apps',
         concept: 'Live exchange rate converter.',
@@ -423,7 +423,7 @@ export const WEEKS: Week[] = [
     focus: 'Cutting-edge technology and ultimate wow-factor.',
     days: [
       {
-        day: 29,
+        day: '29',
         title: '3D Configurator',
         theme: 'Next-Gen',
         concept: 'Interactive 3D object rendering with Three.js.',
@@ -435,7 +435,7 @@ export const WEEKS: Week[] = [
         technologies: ['Three.js', 'React-Three-Fiber', 'GLSL']
       },
       {
-        day: 30,
+        day: '30',
         title: 'AI Wrapper',
         theme: 'Next-Gen',
         concept: 'Gemini3-powered business name generator.',
@@ -447,7 +447,7 @@ export const WEEKS: Week[] = [
         technologies: ['Google Gemini API', 'Next.js', 'Streaming']
       },
       {
-        day: 31,
+        day: '31',
         title: 'The Grand Timeline',
         theme: 'Meta',
         concept: 'Immersive journey through all 30 challenges.',

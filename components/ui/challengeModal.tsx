@@ -53,7 +53,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
             <div className="absolute top-6 right-6 z-10">
               <button
                 onClick={onClose}
-                className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-[#ff6000] transition-colors"
+                className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-[#ff6000] transition-colors cursor-pointer"
                 aria-label="Close modal"
               >
                 <HugeIcon icon={Cancel01Icon} size={20} />
@@ -121,7 +121,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
                 </a>
                 <button
                   onClick={onClose}
-                  className="px-8 py-4 rounded-2xl border border-slate-200 dark:border-slate-800 font-bold text-sm uppercase tracking-widest text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shadow-sm"
+                  className="px-8 py-4 rounded-2xl border border-slate-200 dark:border-slate-800 font-bold text-sm uppercase tracking-widest text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shadow-sm cursor-pointer"
                 >
                   Go Back
                 </button>
