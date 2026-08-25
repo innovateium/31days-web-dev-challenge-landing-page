@@ -10,7 +10,7 @@ export default function Hero() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff6000] opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ff6000]"></span>
         </span>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-[#ff6000]">January 2026 Initiative</span>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-[#ff6000]">September 2026 Initiative</span>
       </div>
 
       <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-slate-800 dark:text-slate-200">

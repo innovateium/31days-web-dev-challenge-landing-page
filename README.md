@@ -39,14 +39,14 @@ The challenge is strategically divided into five distinct phases:
 2.  **Phase 2: Small Business Essentials**: Conversion-focused layouts and rapid deployment patterns.
 3.  **Phase 3: Complexity & Architecture**: Multi-page structures and advanced data organization.
 4.  **Phase 4: Web Applications**: Core JavaScript logic, state management, and API integration.
-5.  **Phase 5: Wildcard Days**: The future of web tech—AI integration, 3D configurators, and immersive timelines.
+5.  **Phase 5: Wildcard Days**: The future of web tech: AI integration, 3D configurators, and immersive timelines.
 
 ## 🏁 Development
 
 ### Prerequisites
 
 - Node.js 18.17+
-- npm / yarn / pnpm
+- pnpm 11 or later
 
 ### Installation
 
@@ -56,11 +56,11 @@ The challenge is strategically divided into five distinct phases:
     ```
 2.  Install dependencies:
     ```bash
-    npm install
+    pnpm install
     ```
 3.  Launch development server:
     ```bash
-    npm run dev
+    pnpm dev
     ```
 
 Access the application at `http://localhost:3000`.
@@ -76,4 +76,4 @@ Innovateium is a leading digital solutions provider based in **Gaborone, Botswan
 
 ---
 
-Built with ❤️ in **Botswana 🇧🇼** by [Innovateium](https://innovateium.co.bw)
+Built in **Botswana 🇧🇼** by [Innovateium](https://innovateium.co.bw)

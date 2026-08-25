@@ -3,6 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Ubuntu, Ubuntu_Mono } from 'next/font/google';
 import { ThemeProvider } from '../components/theme/theme-provider';
+import { DemoNotice } from '@/components/ui/demo-notice';
 import './globals.css';
 
 const ubuntuSans = Ubuntu({
@@ -98,6 +99,7 @@ export default function RootLayout({
       <body className={`${ubuntuSans.variable} ${ubuntuMono.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
+          <DemoNotice project="The 31 Days Challenge" storageKey="31dayslanding-demo-notice" />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />
