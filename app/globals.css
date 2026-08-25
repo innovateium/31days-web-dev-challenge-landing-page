@@ -17,12 +17,26 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-ubuntu-sans);
   --font-mono: var(--font-ubuntu-mono);
+  --font-display: var(--font-sora);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-ubuntu-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Sora on every heading, Ubuntu everywhere else. Anything that wants the
+   display face outside a heading can reach for .font-display. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-display {
+  font-family: var(--font-sora), var(--font-ubuntu-sans), Arial, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 /* === innovateium brand kit: theme view transition === */
@@ -61,14 +75,34 @@ body {
 @keyframes vt-brand {
   from {
     clip-path: circle(0 at var(--vt-x, 50%) var(--vt-y, 50%));
-    filter: drop-shadow(0 0 0 #e34b25);
+    filter: drop-shadow(0 0 0 #E14B25);
   }
   35% {
-    filter: drop-shadow(0 0 24px rgb(227 75 37 / 0.55));
+    filter: drop-shadow(0 0 24px rgb(225 75 37 / 0.55));
   }
   to {
     clip-path: circle(var(--vt-r, 150vmax) at var(--vt-x, 50%) var(--vt-y, 50%));
-    filter: drop-shadow(0 0 0 rgb(227 75 37 / 0));
+    filter: drop-shadow(0 0 0 rgb(225 75 37 / 0));
   }
 }
 /* === end innovateium brand kit === */
+
+/* === innovateium brand kit: interactive cursors === */
+/* Tailwind 4 stopped forcing a pointer cursor on buttons, so anything the user
+   can actually click asks for one here. Disabled controls keep the default. */
+button:not(:disabled),
+[role='button']:not([aria-disabled='true']),
+[role='tab']:not([aria-disabled='true']),
+[role='switch']:not([aria-disabled='true']),
+summary,
+label[for],
+select:not(:disabled),
+a[href] {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+/* === end interactive cursors === */

@@ -1,13 +1,23 @@
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
-import { Ubuntu, Ubuntu_Mono } from 'next/font/google';
+import { Sora, Ubuntu, Ubuntu_Mono } from 'next/font/google';
 import { ThemeProvider } from '../components/theme/theme-provider';
 import { DemoNotice } from '@/components/ui/demo-notice';
 import './globals.css';
 
+// Sora carries the headings. Its wide, geometric caps hold up at display size
+// and give the page a voice Ubuntu on its own does not have.
+const sora = Sora({
+  variable: '--font-sora',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800']
+});
+
+// Ubuntu stays on body copy, where its shorter ascenders read better small.
 const ubuntuSans = Ubuntu({
   variable: '--font-ubuntu-sans',
+  subsets: ['latin'],
   weight: ['400', '500', '700']
 });
 
@@ -96,7 +106,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${ubuntuSans.variable} ${ubuntuMono.variable} antialiased`}>
+      <body className={`${sora.variable} ${ubuntuSans.variable} ${ubuntuMono.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
           <DemoNotice project="The 31 Days Challenge" storageKey="31dayslanding-demo-notice" />

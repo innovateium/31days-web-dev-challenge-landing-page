@@ -184,7 +184,7 @@ function ShieldIcon() {
  * Tailwind theme being configured any particular way.
  */
 const DEMO_NOTICE_CSS = `
-.inv-notice-root, .inv-notice-trigger { --inv-orange: #e34b25; --inv-ink: #0d0d0f; --inv-paper: #ffffff;
+.inv-notice-root, .inv-notice-trigger { --inv-orange: #E14B25; --inv-ink: #0d0d0f; --inv-paper: #ffffff;
   --inv-muted: #5b5f66; --inv-line: rgb(0 0 0 / 0.10); --inv-soft: rgb(0 0 0 / 0.04); }
 @media (prefers-color-scheme: dark) {
   .inv-notice-root, .inv-notice-trigger { --inv-ink: #f4f4f5; --inv-paper: #101013; --inv-muted: #a1a1aa;

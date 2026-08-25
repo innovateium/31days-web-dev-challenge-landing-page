@@ -71,8 +71,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc1.innovateium.co.bw',
         details:
-          'A premium login interface featuring sophisticated frosted-glass effects, subtle backdrop blurs, and smooth state transitions. This component demonstrates the power of modern CSS/Tailwind for creating high-end aesthetic UIs.',
-        technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Lucide React']
+          'A frosted glass sign in and sign up panel built on real backdrop-filter rather than a screenshot of one. Fields validate as you type, the password meter scores in real time, and the panel restyles itself between light and dark.',
+        technologies: ['Tailwind CSS 4', 'backdrop-filter', 'Framer Motion', 'Live validation']
       },
       {
         day: '02',
@@ -83,8 +83,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc2.innovateium.co.bw',
         details:
-          'A clean and functional pricing section with a seamless monthly/yearly toggle. Each card features hover animations, badge indicators, and clear feature lists to maximize conversion potential.',
-        technologies: ['React', 'Lucide React', 'CSS Transitions', 'State Management']
+          'Three tiers with a monthly and yearly toggle that recalculates every price in place, plus a currency switcher. The saving is worked out from the numbers rather than hard coded into the copy.',
+        technologies: ['Tailwind CSS 4', 'Framer Motion', 'Multi currency', 'Hugeicons']
       },
       {
         day: '03',
@@ -95,8 +95,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc3.innovateium.co.bw',
         details:
-          'An expansive navigation system designed for content-heavy sites. It integrates icons and descriptive text for each link, ensuring a smooth user experience across all device sizes.',
-        technologies: ['React', 'Radix UI', 'Tailwind CSS', 'Responsive Design']
+          'A navigation bar that opens into a rich media mega menu of products, solutions and resources. Every panel is reachable by keyboard and announced correctly, which is the part most mega menus skip.',
+        technologies: ['CSS Grid', 'ARIA menus', 'Framer Motion', 'Keyboard nav']
       },
       {
         day: '04',
@@ -107,8 +107,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc4.innovateium.co.bw',
         details:
-          'A user-centric multi-step form that simplifies complex data entry. Featuring real-time validation, progress tracking, and accessible input fields to ensure high completion rates.',
-        technologies: ['React Hook Form', 'Zod', 'Framer Motion', 'React']
+          'A three step contact wizard with a progress indicator and validation that speaks up as soon as a field goes wrong. The phone field carries a searchable country code list rather than a plain text box.',
+        technologies: ['Multi step state', 'country-codes-list', 'Framer Motion', 'Inline validation']
       },
       {
         day: '05',
@@ -119,8 +119,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc5.innovateium.co.bw',
         details:
-          'A data visualization component that displays key metrics through interactive charts. Designed to be lightweight yet visually impactful for modern admin dashboards.',
-        technologies: ['Recharts', 'React', 'Tailwind CSS', 'Data Vis']
+          'A dashboard card whose line chart draws itself on load, with a tracking line and tooltip on hover. Every path is hand rolled SVG, so there is no charting library in the bundle at all.',
+        technologies: ['Hand rolled SVG', 'Framer Motion', 'Tailwind CSS 4', 'No chart library']
       },
       {
         day: '06',
@@ -131,8 +131,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc6.innovateium.co.bw',
         details:
-          'An infinite-loop slider that showcases customer testimonials with high-quality avatars and ratings. It utilizes smooth CSS animations for a continuous, non-intrusive review experience.',
-        technologies: ['React', 'CSS Keyframes', 'Lucide Icons']
+          'Two rows of testimonials scrolling in opposite directions, pausing when you hover so you can actually read one. The loop is pure CSS keyframes with no JavaScript driving it.',
+        technologies: ['CSS keyframes', 'Marquee', 'Framer Motion', 'Tailwind CSS 4']
       },
       {
         day: '07',
@@ -143,8 +143,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc7.innovateium.co.bw',
         details:
-          'A robust theme toggle component that allows users to switch between light and dark modes. It persists user preference via local storage and ensures a flicker-free transition.',
-        technologies: ['next-themes', 'React', 'Local Storage', 'CSS Variables']
+          'A theme switcher driven entirely by CSS custom properties and persisted to local storage, with no flash of the wrong theme on first paint. The swap runs through the View Transitions API.',
+        technologies: ['CSS variables', 'localStorage', 'View Transitions API', 'next-themes']
       }
     ]
   },
@@ -161,8 +161,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc8.innovateium.co.bw',
         details:
-          'A minimalist yet bold portfolio template designed to highlight professional achievements and creative work. Features smooth scrolling navigation and a specialized project gallery.',
-        technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion']
+          'A single page portfolio for a creative professional, with a scroll driven work section and a Lottie animation in the hero. Each project opens into a detail modal without leaving the page.',
+        technologies: ['Lottie', 'Framer Motion', 'Scroll animation', 'Next.js 16']
       },
       {
         day: '09',
@@ -173,8 +173,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc9.innovateium.co.bw',
         details:
-          'An appetizing menu showcase with interactive categories and high-resolution imagery. Implements subtle parallax effects to create depth and enhance the dining atmosphere.',
-        technologies: ['React', 'Intersection Observer', 'Tailwind CSS']
+          'A bistro landing page with a parallax hero and a menu grouped by course. The cart is real: add a dish, open the sidebar, and the totals follow you across the menu pages.',
+        technologies: ['Parallax', 'React context', 'Framer Motion', 'Next.js 16']
       },
       {
         day: '10',
@@ -185,8 +185,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc10.innovateium.co.bw',
         details:
-          'A high-impact "coming soon" page focused on lead generation. Includes a dynamic countdown timer and a clean email subscription form to build an early audience.',
-        technologies: ['React', 'Date-fns', 'Tailwind CSS']
+          'A product launch page with a countdown that keeps correct time across a refresh and an email capture field. GSAP drives the entrance, everything else is CSS.',
+        technologies: ['Countdown timer', 'GSAP', 'Email capture', 'Tailwind CSS 4']
       },
       {
         day: '11',
@@ -197,8 +197,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc11.innovateium.co.bw',
         details:
-          'A conversion-focused landing page for service-based businesses. Prioritizes trust signals like reviews and certifications while making it easy for users to request a free quote.',
-        technologies: ['React', 'Formik', 'Tailwind CSS']
+          'A trustworthy landing page for a local trade, built around one job: getting a quote request. Pricing, service areas and callout hours are answered before the form is asked for.',
+        technologies: ['Lead capture', 'Framer Motion', 'Tailwind CSS 4', 'Hugeicons']
       },
       {
         day: '12',
@@ -209,8 +209,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc12.innovateium.co.bw',
         details:
-          'An elegant property detail page featuring a responsive photo grid and clear layout for property specifications. Ideal for real estate agencies and individual listings.',
-        technologies: ['React', 'Grid Layout', 'Tailwind CSS']
+          'A single property showcase with a photo gallery and a working viewing scheduler. The date picker is timezone correct, which is exactly the thing that goes wrong in property sites.',
+        technologies: ['HeroUI Calendar', '@internationalized/date', 'Gallery grid', 'Framer Motion']
       },
       {
         day: '13',
@@ -221,8 +221,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc13.innovateium.co.bw',
         details:
-          'A narrative-driven page for non-profit organizations. It emphasizes the mission through impactful imagery and interactive progress bars for ongoing donation campaigns.',
-        technologies: ['React', 'Framer Motion', 'Tailwind CSS']
+          'A donation page built around one story rather than a wall of statistics, with a live funding bar and an impact map of where the money lands. Every figure on the page is invented for the demo.',
+        technologies: ['MapLibre GL', 'Framer Motion', 'Progress bar', 'Tailwind CSS 4']
       },
       {
         day: '14',
@@ -233,8 +233,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc14.innovateium.co.bw',
         details:
-          'A dynamic fitness studio landing page that includes a clean, responsive class schedule and high-energy sections for training programs and trainer profiles.',
-        technologies: ['React', 'Tailwind CSS', 'Responsive Tables']
+          'A high energy gym landing page with a weekly timetable you can filter by day. The type is deliberately loud, the layout is not.',
+        technologies: ['Class timetable', 'Framer Motion', 'Bold type', 'Tailwind CSS 4']
       }
     ]
   },
@@ -251,8 +251,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc15.innovateium.co.bw',
         details:
-          'A structured internal dashboard layout featuring a collapsible sidebar, breadcrumb navigation, and a searchable knowledge-base interface for organizational efficiency.',
-        technologies: ['Next.js', 'Sidebar Logic', 'Search Filter']
+          'A corporate intranet with a sidebar, a file repository and a knowledge base you can actually search. Press Command K and the palette finds articles, files and people in one list.',
+        technologies: ['Command palette', 'Scoped search', 'Framer Motion', 'Next.js 16']
       },
       {
         day: '16',
@@ -263,8 +263,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc16.innovateium.co.bw',
         details:
-          'A professional e-commerce product page including an interactive image gallery with zoom functionality, variant selectors (size/color), and a clean tabbed description section.',
-        technologies: ['React', 'Context API', 'Hover Zoom']
+          'A product detail page with hover zoom, colour and storage selection, and an add to cart animation that tells you it worked. Every variant change updates the price and the gallery together.',
+        technologies: ['Image zoom', 'Variant state', 'Framer Motion', 'Tailwind CSS 4']
       },
       {
         day: '17',
@@ -275,8 +275,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc17.innovateium.co.bw',
         details:
-          'A highly functional travel booking interface featuring a sophisticated search bar with integrated date pickers and guest selectors, optimized for user experience.',
-        technologies: ['Date-fns', 'React-Day-Picker', 'Tailwind']
+          'A Visit Botswana style travel portal with filters for dates, guests and the kind of place you want. The search runs against a seeded set of lodges and camps rather than pretending to hit an API.',
+        technologies: ['Search filters', 'Framer Motion', 'Grid layout', 'Next.js 16']
       },
       {
         day: '18',
@@ -287,8 +287,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc18.innovateium.co.bw',
         details:
-          'A classic newspaper-style grid layout that effectively organizes diverse content types. Includes sections for breaking news, featured stories, and categorized articles.',
-        technologies: ['CSS Grid', 'React', 'Typography']
+          'A newspaper front page laid out in CSS Grid, with a breaking news ticker and desks you can switch between. The grid holds its shape from a phone up to a wide desktop.',
+        technologies: ['CSS Grid', 'News ticker', 'Motion', 'Editorial type']
       },
       {
         day: '19',
@@ -299,8 +299,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc19.innovateium.co.bw',
         details:
-          'A high-converting SaaS landing page utilizing modern Bento-style grids to display application features and benefits in a clean, contemporary design.',
-        technologies: ['Next.js', 'Bento Grid', 'AOS Animations']
+          'A SaaS homepage built on a bento grid, with tabbed feature detail and an integrations wall. Metsi is a fictional data observability product, named for the Setswana word for water.',
+        technologies: ['Bento grid', 'Feature tabs', 'Motion', 'Tailwind CSS 4']
       },
       {
         day: '20',
@@ -311,8 +311,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc20.innovateium.co.bw',
         details:
-          'A dedicated learning management interface featuring a large video player, a scrollable syllabus sidebar with progress tracking, and a focus-mode toggle.',
-        technologies: ['Video.js', 'State Management', 'React']
+          'A course player with a video stage, a chaptered syllabus and per lesson progress that survives a refresh. Notes are timestamped to the second they were taken.',
+        technologies: ['Video player UI', 'Chaptered syllabus', 'Motion', 'Progress tracking']
       },
       {
         day: '21',
@@ -323,8 +323,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc21.innovateium.co.bw',
         details:
-          'An advanced agency showcase featuring immersive scroll-based animations and large typographic sections to tell a compelling brand story for digital agencies.',
-        technologies: ['Framer Motion', 'React-Scroll', 'Next.js']
+          'An ultra minimal agency site where every reveal is driven by Intersection Observer rather than a scroll library. Studio Kopano is invented, the restraint is not.',
+        technologies: ['Intersection Observer', 'Motion', 'Scroll reveals', 'Minimal type']
       }
     ]
   },
@@ -341,8 +341,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc22.innovateium.co.bw',
         details:
-          'A dynamic weather application integrated with real-time APIs to provide weather updates, hourly charts, and detailed 5-day forecasts for any city worldwide.',
-        technologies: ['Weather API', 'Axios', 'Chart.js', 'React']
+          'Current conditions and a five day forecast for Gaborone or anywhere you search, live from the Open-Meteo API. When the network is unavailable it falls back to a clearly dated snapshot rather than an error.',
+        technologies: ['Open-Meteo API', 'Async await', 'Mock fallback', 'Motion']
       },
       {
         day: '23',
@@ -353,8 +353,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc23.innovateium.co.bw',
         details:
-          'A full-featured project management board allowing users to create, move, and edit tasks across different stages using an intuitive drag-and-drop interface.',
-        technologies: ['dnd-kit', 'React', 'Local Storage']
+          'A Trello style board where cards move by pointer or by keyboard, with work in progress limits per column. Focus a card, press space, move with the arrow keys, press space again.',
+        technologies: ['dnd-kit', 'Keyboard drag and drop', 'localStorage', 'WIP limits']
       },
       {
         day: '24',
@@ -365,8 +365,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc24.innovateium.co.bw',
         details:
-          'A personal finance tool that tracks income and expenses, providing visual insights through pie and bar charts for efficient budget management.',
-        technologies: ['React', 'Recharts', 'Form Logic']
+          'Log an expense, categorise it, and watch the donut and the category breakdown recompute as you type. Everything stays in your browser.',
+        technologies: ['Donut chart', 'localStorage', 'Motion', 'Category logic']
       },
       {
         day: '25',
@@ -377,8 +377,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc25.innovateium.co.bw',
         details:
-          'A powerful tool for writers and developers to create content using Markdown. Features a dual-pane view with instant HTML preview and syntax highlighting.',
-        technologies: ['React-Markdown', 'Prism.js', 'React']
+          'A split screen Markdown editor rendering to sanitised HTML as you type. The sanitiser is real: paste a script tag and watch it get stripped.',
+        technologies: ['marked', 'DOMPurify', 'Split screen', 'Live preview']
       },
       {
         day: '26',
@@ -389,8 +389,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc26.innovateium.co.bw',
         details:
-          'A security utility that generates strong, customizable passwords. Includes a real-time strength assessment meter and one-click copy functionality.',
-        technologies: ['Crypto API', 'React', 'Tailwind']
+          'A password generator built on crypto.getRandomValues with proper modulo bias rejection, so the character distribution is genuinely uniform. Entropy is reported in bits and nothing leaves the browser.',
+        technologies: ['Web Crypto API', 'Modulo bias rejection', 'Clipboard API', 'Entropy meter']
       },
       {
         day: '27',
@@ -401,8 +401,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc27.innovateium.co.bw',
         details:
-          'An interactive quiz platform featuring timed questions, immediate feedback, and a detailed results breakdown with score calculations.',
-        technologies: ['React', 'Timer Logic', 'State Machine']
+          'A timed ten question quiz on Botswana that scores the run and explains the reasoning behind every answer. Itse is Setswana for know.',
+        technologies: ['Scoring logic', 'Timer', 'Motion', 'Result card']
       },
       {
         day: '28',
@@ -413,8 +413,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc28.innovateium.co.bw',
         details:
-          'A financial converter tool using live exchange data to switch between dozens of global currencies and popular cryptocurrencies in real-time.',
-        technologies: ['ExchangeRate API', 'React', 'Axios']
+          'A converter running on live fiat rates and live crypto prices, with Pula first. When either API is unavailable it says so and shows a dated snapshot instead of a stale number.',
+        technologies: ['open.er-api.com', 'CoinGecko', 'Live rates', 'Mock fallback']
       }
     ]
   },
@@ -431,20 +431,20 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-1',
         link: 'https://wdc29.innovateium.co.bw',
         details:
-          'An immersive 3D experience allowing users to interact with and customize a 3D model in real-time within the browser. Demonstrates advanced WebGL capabilities.',
-        technologies: ['Three.js', 'React-Three-Fiber', 'GLSL']
+          'A chair you can orbit in the browser and reconfigure, rendered with React Three Fiber. Change the frame, the fabric and the legs and watch the price follow.',
+        technologies: ['React Three Fiber', 'drei', 'WebGL', 'Orbit controls']
       },
       {
         day: '30',
         title: 'AI Wrapper',
         theme: 'Next-Gen',
-        concept: 'Gemini3-powered business name generator.',
+        concept: 'Claude-powered business name generator.',
         icon: Bot,
         size: 'md:col-span-1',
         link: 'https://wdc30.innovateium.co.bw',
         details:
-          'An AI-integrated tool that generates creative business ideas and names based on user prompts, leveraging the power of Google Gemini for intelligent suggestions.',
-        technologies: ['Google Gemini API', 'Next.js', 'Streaming']
+          'Describe a niche and get five named ideas back, each with a tagline and a reason it earns its place. The Claude API returns schema validated output, so the interface never has to parse prose.',
+        technologies: ['Claude API', 'Zod', 'Structured outputs', 'Mock fallback']
       },
       {
         day: '31',
@@ -455,8 +455,8 @@ export const WEEKS: Week[] = [
         size: 'md:col-span-2',
         link: 'https://wdc31.innovateium.co.bw',
         details:
-          'The ultimate showcase! A high-performance interactive timeline that revisits all previous 30 challenges, creating a cohesive story of the 31-day development journey.',
-        technologies: ['React', 'Framer Motion', 'Complex Animations']
+          'A scroll controlled timeline of the whole month, linking out to all thirty builds that came before it. The finale is a meta site about the challenge itself.',
+        technologies: ['Scroll timeline', 'Motion', 'Storytelling', 'Next.js 16']
       }
     ]
   }
