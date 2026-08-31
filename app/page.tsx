@@ -7,7 +7,7 @@ import { FOOTER } from '@/constants/footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full relative bg-white dark:bg-slate-950 text-slate-950 dark:text-white transition-colors duration-500 selection:bg-[#E14B25]/30 font-sans">
+    <div className="min-h-screen w-full relative bg-white dark:bg-slate-950 text-slate-950 dark:text-white transition-colors duration-500 selection:bg-[#E04B26]/30 font-sans">
       <GridBackground />
       <div className="relative z-10">
         <Header />

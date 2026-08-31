@@ -26,7 +26,7 @@ export default function AllDaysPage() {
     <main className="max-w-7xl mx-auto px-6 py-20 min-h-screen">
       <div className="mb-16 space-y-4">
         <h1 className="text-5xl md:text-7xl font-black tracking-tight">
-          ALL <span className="text-[#E14B25]">PROJECTS</span>
+          ALL <span className="text-[#E04B26]">PROJECTS</span>
         </h1>
         <p className="text-slate-500 dark:text-slate-400 text-lg max-w-2xl font-medium">
           A complete collection of all 31 challenges, from UI components to full-scale web applications and next-gen
@@ -41,12 +41,12 @@ export default function AllDaysPage() {
             <button
               key={item.day}
               onClick={() => openModal(item)}
-              className="group relative text-left bg-slate-50 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800/80 rounded-[2rem] p-8 hover:border-[#E14B25]/50 hover:shadow-2xl hover:shadow-[#E14B25]/10 dark:hover:shadow-none transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer"
+              className="group relative text-left bg-slate-50 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800/80 rounded-[2rem] p-8 hover:border-[#E04B26]/50 hover:shadow-2xl hover:shadow-[#E04B26]/10 dark:hover:shadow-none transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer"
             >
               <div className="relative z-10">
                 <div className="flex justify-between items-start mb-8">
                   <div className="space-y-1">
-                    <span className="text-[#E14B25] font-mono font-black text-sm tracking-wider uppercase">
+                    <span className="text-[#E04B26] font-mono font-black text-sm tracking-wider uppercase">
                       Day {item.day.toString().padStart(2, '0')}
                     </span>
                     <div className="flex items-center gap-2">
@@ -55,29 +55,29 @@ export default function AllDaysPage() {
                       </span>
                     </div>
                   </div>
-                  <div className="h-12 w-12 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700/50 flex items-center justify-center text-slate-500 dark:text-slate-400 group-hover:text-[#E14B25] transition-all duration-300 group-hover:scale-110 group-hover:border-[#E14B25]/30">
+                  <div className="h-12 w-12 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700/50 flex items-center justify-center text-slate-500 dark:text-slate-400 group-hover:text-[#E04B26] transition-all duration-300 group-hover:scale-110 group-hover:border-[#E04B26]/30">
                     <Icon size={24} />
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-bold group-hover:text-[#E14B25] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold group-hover:text-[#E04B26] transition-colors duration-300">
                     {item.title}
                   </h3>
                   <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">{item.concept}</p>
                 </div>
               </div>
 
-              <div className="mt-8 flex items-center text-[#E14B25] font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0">
+              <div className="mt-8 flex items-center text-[#E04B26] font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0">
                 View Project <HugeIcon icon={ArrowRight01Icon} className="ml-2 w-4 h-4" />
               </div>
 
-              <div className="absolute -bottom-10 -right-10 text-slate-200 dark:text-slate-800/10 group-hover:text-[#E14B25]/5 group-hover:rotate-12 group-hover:scale-125 transition-all duration-700 pointer-events-none">
+              <div className="absolute -bottom-10 -right-10 text-slate-200 dark:text-slate-800/10 group-hover:text-[#E04B26]/5 group-hover:rotate-12 group-hover:scale-125 transition-all duration-700 pointer-events-none">
                 <Icon size={180} />
               </div>
 
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                <div className="absolute -right-24 -bottom-24 bg-[#E14B25]/10 dark:bg-[#E14B25]/5 blur-[80px] w-64 h-64" />
+                <div className="absolute -right-24 -bottom-24 bg-[#E04B26]/10 dark:bg-[#E04B26]/5 blur-[80px] w-64 h-64" />
               </div>
             </button>
           );

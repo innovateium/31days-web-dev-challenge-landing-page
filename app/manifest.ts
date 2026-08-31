@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: '31 Days. 31 Projects. Building the future of digital experiences.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#020617',
-    theme_color: '#E14B25',
+    background_color: '#231f20',
+    theme_color: '#E04B26',
     icons: [
       {
         src: '/favicon.ico',

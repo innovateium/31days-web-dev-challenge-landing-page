@@ -9,7 +9,7 @@ export const FOOTER = {
   day: 0,
   date: "September 2026",
   tagline: "Thirty one days, thirty one builds, shipped from Botswana. No drafts, no skipped days, just the work in public.",
-  accent: "#E14B25",
+  accent: "#E04B26",
   tone: "auto" as const,
   columns: [
     {

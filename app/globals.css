@@ -4,11 +4,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #231f20;
 }
 
 .dark {
-  --background: #0a0a0a;
+  --background: #231f20;
   --foreground: #ededed;
 }
 
@@ -75,14 +75,14 @@ h6,
 @keyframes vt-brand {
   from {
     clip-path: circle(0 at var(--vt-x, 50%) var(--vt-y, 50%));
-    filter: drop-shadow(0 0 0 #E14B25);
+    filter: drop-shadow(0 0 0 #E04B26);
   }
   35% {
-    filter: drop-shadow(0 0 24px rgb(225 75 37 / 0.55));
+    filter: drop-shadow(0 0 24px rgb(224 75 38 / 0.55));
   }
   to {
     clip-path: circle(var(--vt-r, 150vmax) at var(--vt-x, 50%) var(--vt-y, 50%));
-    filter: drop-shadow(0 0 0 rgb(225 75 37 / 0));
+    filter: drop-shadow(0 0 0 rgb(224 75 38 / 0));
   }
 }
 /* === end innovateium brand kit === */
@@ -106,3 +106,16 @@ button:disabled,
   cursor: not-allowed;
 }
 /* === end interactive cursors === */
+
+/* === innovateium brand palette === */
+/* From the Innovateium visual identity document. Primary is Cinnabar on
+   Attractive Black; the three secondaries are for accents and never for body
+   text, since none of them clear 4.5:1 on white. */
+:root {
+  --inv-cinnabar: #E04B26;
+  --inv-attractive-black: #231F20;
+  --inv-best-red: #A41115;
+  --inv-comforting-orange: #FF8F41;
+  --inv-texas-rose: #FFB659;
+}
+/* === end brand palette === */

@@ -85,7 +85,7 @@ const BlurText: React.FC<BlurTextProps> = ({
       e2.forEach((t, i) => {
         res.push({
           content: t,
-          color: '#E14B25',
+          color: '#E04B26',
           addSpace: animateBy === 'words' && i < e2.length - 1,
           showBreak: i === e2.length - 1
         });

@@ -28,7 +28,7 @@ export default function RoadMaps() {
     <main className="max-w-7xl mx-auto px-6 pb-32 space-y-28">
       {WEEKS.map((week, weekIndex) => (
         <section key={weekIndex} className="space-y-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-l-4 border-[#E14B25] pl-6 py-2 z-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-l-4 border-[#E04B26] pl-6 py-2 z-10">
             <div>
               <h2 className="text-3xl md:text-4xl font-black tracking-tight">{week.title}</h2>
               <p className="text-slate-500 dark:text-slate-400 font-bold mt-1 uppercase text-xs tracking-[0.2em]">
@@ -47,22 +47,22 @@ export default function RoadMaps() {
                 <button
                   key={item.day}
                   onClick={() => openModal(item)}
-                  className={`${item.size} group relative text-left bg-slate-50 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800/80 rounded-[2.5rem] p-8 hover:border-[#E14B25]/50 hover:shadow-2xl hover:shadow-[#E14B25]/5 dark:hover:shadow-none transition-all duration-500 overflow-hidden flex flex-col justify-between cursor-pointer`}
+                  className={`${item.size} group relative text-left bg-slate-50 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800/80 rounded-[2.5rem] p-8 hover:border-[#E04B26]/50 hover:shadow-2xl hover:shadow-[#E04B26]/5 dark:hover:shadow-none transition-all duration-500 overflow-hidden flex flex-col justify-between cursor-pointer`}
                 >
                   <div className="relative z-10">
                     <div className="flex justify-between items-start mb-6">
                       <span className="flex items-baseline gap-2">
-                        <span className="font-mono text-2xl font-black text-[#E14B25]">{item.day}</span>
+                        <span className="font-mono text-2xl font-black text-[#E04B26]">{item.day}</span>
                         <span className="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400 dark:text-slate-500">
                           {dateFor(item.day)}
                         </span>
                       </span>
-                      <div className="h-10 w-10 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700/50 flex items-center justify-center text-slate-500 dark:text-slate-400 group-hover:text-[#E14B25] transition-colors group-hover:border-[#E14B25]/30">
+                      <div className="h-10 w-10 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700/50 flex items-center justify-center text-slate-500 dark:text-slate-400 group-hover:text-[#E04B26] transition-colors group-hover:border-[#E04B26]/30">
                         <Icon size={20} />
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold group-hover:text-[#E14B25] dark:group-hover:text-white transition-colors duration-300 leading-tight mb-3">
+                      <h3 className="text-xl font-bold group-hover:text-[#E04B26] dark:group-hover:text-white transition-colors duration-300 leading-tight mb-3">
                         {item.title}
                       </h3>
                       <p className="text-[13px] leading-relaxed text-slate-500 dark:text-slate-400 line-clamp-3">
@@ -71,11 +71,11 @@ export default function RoadMaps() {
                     </div>
                   </div>
 
-                  <div className="absolute -bottom-10 -right-10 text-slate-200 dark:text-slate-800/20 group-hover:text-[#E14B25]/10 group-hover:rotate-12 group-hover:scale-125 transition-all duration-700">
+                  <div className="absolute -bottom-10 -right-10 text-slate-200 dark:text-slate-800/20 group-hover:text-[#E04B26]/10 group-hover:rotate-12 group-hover:scale-125 transition-all duration-700">
                     <Icon size={160} />
                   </div>
 
-                  <span className="relative z-10 mt-4 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[#E14B25] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <span className="relative z-10 mt-4 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[#E04B26] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     View the build
                     <span aria-hidden>&rarr;</span>
                   </span>

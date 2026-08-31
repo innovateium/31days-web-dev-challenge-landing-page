@@ -184,20 +184,20 @@ function ShieldIcon() {
  * Tailwind theme being configured any particular way.
  */
 const DEMO_NOTICE_CSS = `
-.inv-notice-root, .inv-notice-trigger { --inv-orange: #E14B25; --inv-ink: #0d0d0f; --inv-paper: #ffffff;
+.inv-notice-root, .inv-notice-trigger { --inv-orange: #E04B26; --inv-ink: #231f20; --inv-paper: #ffffff;
   --inv-muted: #5b5f66; --inv-line: rgb(0 0 0 / 0.10); --inv-soft: rgb(0 0 0 / 0.04); }
 @media (prefers-color-scheme: dark) {
-  .inv-notice-root, .inv-notice-trigger { --inv-ink: #f4f4f5; --inv-paper: #101013; --inv-muted: #a1a1aa;
+  .inv-notice-root, .inv-notice-trigger { --inv-ink: #f4f4f5; --inv-paper: #231f20; --inv-muted: #a1a1aa;
     --inv-line: rgb(255 255 255 / 0.12); --inv-soft: rgb(255 255 255 / 0.06); }
 }
 html.dark .inv-notice-root, html.dark .inv-notice-trigger,
 [data-theme="dark"] .inv-notice-root, [data-theme="dark"] .inv-notice-trigger {
-  --inv-ink: #f4f4f5; --inv-paper: #101013; --inv-muted: #a1a1aa;
+  --inv-ink: #f4f4f5; --inv-paper: #231f20; --inv-muted: #a1a1aa;
   --inv-line: rgb(255 255 255 / 0.12); --inv-soft: rgb(255 255 255 / 0.06);
 }
 html.light .inv-notice-root, html.light .inv-notice-trigger,
 [data-theme="light"] .inv-notice-root, [data-theme="light"] .inv-notice-trigger {
-  --inv-ink: #0d0d0f; --inv-paper: #ffffff; --inv-muted: #5b5f66;
+  --inv-ink: #231f20; --inv-paper: #ffffff; --inv-muted: #5b5f66;
   --inv-line: rgb(0 0 0 / 0.10); --inv-soft: rgb(0 0 0 / 0.04);
 }
 

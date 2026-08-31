@@ -69,7 +69,7 @@ export function SiteFooter({
   date,
   tagline,
   columns = [],
-  accent = '#E14B25',
+  accent = '#E04B26',
   tone = 'auto'
 }: SiteFooterProps) {
   return (
@@ -172,20 +172,20 @@ export function SiteFooter({
  * comes from outside, through a custom property.
  */
 const FOOTER_CSS = `
-.inv-footer { --inv-f-ink: #101013; --inv-f-muted: #62666e; --inv-f-paper: #fafafa;
+.inv-footer { --inv-f-ink: #231f20; --inv-f-muted: #62666e; --inv-f-paper: #fafafa;
   --inv-f-line: rgb(0 0 0 / 0.09); --inv-f-faint: #8b9098;
   border-top: 1px solid var(--inv-f-line); background: var(--inv-f-paper); color: var(--inv-f-ink);
   font-family: inherit; }
 @media (prefers-color-scheme: dark) {
-  .inv-footer { --inv-f-ink: #f4f4f5; --inv-f-muted: #9ca1aa; --inv-f-paper: #0b0b0d;
+  .inv-footer { --inv-f-ink: #f4f4f5; --inv-f-muted: #9ca1aa; --inv-f-paper: #231f20;
     --inv-f-line: rgb(255 255 255 / 0.10); --inv-f-faint: #5d626b; }
 }
 html.dark .inv-footer, [data-theme="dark"] .inv-footer, .inv-footer-dark {
-  --inv-f-ink: #f4f4f5; --inv-f-muted: #9ca1aa; --inv-f-paper: #0b0b0d;
+  --inv-f-ink: #f4f4f5; --inv-f-muted: #9ca1aa; --inv-f-paper: #231f20;
   --inv-f-line: rgb(255 255 255 / 0.10); --inv-f-faint: #5d626b;
 }
 html.light .inv-footer, [data-theme="light"] .inv-footer {
-  --inv-f-ink: #101013; --inv-f-muted: #62666e; --inv-f-paper: #fafafa;
+  --inv-f-ink: #231f20; --inv-f-muted: #62666e; --inv-f-paper: #fafafa;
   --inv-f-line: rgb(0 0 0 / 0.09); --inv-f-faint: #8b9098;
 }
 

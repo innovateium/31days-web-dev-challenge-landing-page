@@ -28,7 +28,7 @@ export default function Header() {
           href="/"
           className={`${
             pathname === '/'
-              ? 'text-[#E14B25]'
+              ? 'text-[#E04B26]'
               : 'text-slate-500 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white'
           } transition-all duration-300`}
         >
@@ -38,7 +38,7 @@ export default function Header() {
           href="/all-days"
           className={`${
             pathname.startsWith('/all-days')
-              ? 'text-[#E14B25]'
+              ? 'text-[#E04B26]'
               : 'text-slate-500 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white'
           } transition-all duration-300`}
         >
@@ -46,7 +46,7 @@ export default function Header() {
         </Link>
         <a
           href="https://innovateium.co.bw"
-          className="hidden sm:block border border-slate-200 dark:border-slate-700 px-5 py-2 rounded-full hover:border-[#E14B25] hover:bg-[#E14B25] hover:text-white transition-all duration-300"
+          className="hidden sm:block border border-slate-200 dark:border-slate-700 px-5 py-2 rounded-full hover:border-[#E04B26] hover:bg-[#E04B26] hover:text-white transition-all duration-300"
           target="_blank"
           rel="noopener noreferrer"
         >

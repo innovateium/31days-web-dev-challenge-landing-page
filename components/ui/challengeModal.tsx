@@ -53,7 +53,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
             <div className="absolute top-6 right-6 z-10">
               <button
                 onClick={onClose}
-                className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-[#E14B25] transition-colors cursor-pointer"
+                className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-[#E04B26] transition-colors cursor-pointer"
                 aria-label="Close modal"
               >
                 <HugeIcon icon={Cancel01Icon} size={20} />
@@ -64,11 +64,11 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
             <div className="p-8 md:p-12 space-y-8">
               {/* Top Section: Day & Icon */}
               <div className="flex items-center gap-6">
-                <div className="h-16 w-16 rounded-2xl bg-[#E14B25]/10 flex items-center justify-center text-[#E14B25]">
+                <div className="h-16 w-16 rounded-2xl bg-[#E04B26]/10 flex items-center justify-center text-[#E04B26]">
                   <Icon size={32} />
                 </div>
                 <div>
-                  <span className="text-[#E14B25] font-mono font-black text-sm tracking-widest uppercase">
+                  <span className="text-[#E04B26] font-mono font-black text-sm tracking-widest uppercase">
                     Challenge Day {challenge.day}
                   </span>
                   <h2 className="text-3xl md:text-4xl font-black tracking-tight mt-1">{challenge.title}</h2>
@@ -85,7 +85,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
               {/* Concept Section */}
               <div className="space-y-4">
                 <h3 className="text-lg font-bold flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-[#E14B25]" />
+                  <span className="h-2 w-2 rounded-full bg-[#E04B26]" />
                   The Concept
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-medium">{challenge.details}</p>
@@ -94,7 +94,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
               {/* Technologies Section */}
               <div className="space-y-4">
                 <h3 className="text-lg font-bold flex items-center gap-2">
-                  <HugeIcon icon={ChipIcon} className="text-[#E14B25]" size={20} />
+                  <HugeIcon icon={ChipIcon} className="text-[#E04B26]" size={20} />
                   Technologies Used
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -115,7 +115,7 @@ export default function ChallengeModal({ challenge, isOpen, onClose }: Challenge
                   href={challenge.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 bg-[#E14B25] text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#ff8000] hover:shadow-xl transition-all active:scale-95"
+                  className="flex-1 flex items-center justify-center gap-2 bg-[#E04B26] text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#ff8000] hover:shadow-xl transition-all active:scale-95"
                 >
                   View Live Demo <HugeIcon icon={ArrowUpRight01Icon} size={18} />
                 </a>
