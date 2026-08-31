@@ -40,7 +40,7 @@ h6,
 }
 
 /* === innovateium brand kit: theme view transition === */
-/* 31dayslanding: Circle from the toggle with a brand-orange edge */
+/* 31dayslanding: Circle growing from the toggle */
 /* ---------- Theme view transition ------------------------------------- */
 /* The old frame is a still image underneath; the new theme is revealed over
    the top of it. Killing both default animations stops the browser's built-in
@@ -67,22 +67,17 @@ h6,
   }
 }
 
-/* Circle from the toggle with a brand-orange edge */
+/* Circle growing from the toggle */
 ::view-transition-new(root) {
-  animation: vt-brand 620ms cubic-bezier(0.22, 1, 0.36, 1);
+  animation: vt-circle 560ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@keyframes vt-brand {
+@keyframes vt-circle {
   from {
     clip-path: circle(0 at var(--vt-x, 50%) var(--vt-y, 50%));
-    filter: drop-shadow(0 0 0 #E04B26);
-  }
-  35% {
-    filter: drop-shadow(0 0 24px rgb(224 75 38 / 0.55));
   }
   to {
     clip-path: circle(var(--vt-r, 150vmax) at var(--vt-x, 50%) var(--vt-y, 50%));
-    filter: drop-shadow(0 0 0 rgb(224 75 38 / 0));
   }
 }
 /* === end innovateium brand kit === */
