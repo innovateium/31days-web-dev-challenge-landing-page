@@ -19,7 +19,6 @@ export function DemoNotice({ project, storageKey }: DemoNoticeProps) {
   const [open, setOpen] = React.useState(false);
   const [ready, setReady] = React.useState(false);
   const panelRef = React.useRef<HTMLDivElement>(null);
-  const triggerRef = React.useRef<HTMLButtonElement>(null);
 
   React.useEffect(() => {
     setReady(true);
@@ -39,7 +38,6 @@ export function DemoNotice({ project, storageKey }: DemoNoticeProps) {
     } catch {
       /* nothing to do, the notice simply shows again next load */
     }
-    triggerRef.current?.focus();
   }, [storageKey]);
 
   // Hold focus inside the panel while it is up, and let Escape close it.
@@ -82,17 +80,6 @@ export function DemoNotice({ project, storageKey }: DemoNoticeProps) {
   return (
     <>
       <style>{DEMO_NOTICE_CSS}</style>
-
-      <button
-        ref={triggerRef}
-        type="button"
-        onClick={() => setOpen(true)}
-        aria-label="About this demo"
-        className="inv-notice-trigger"
-        hidden={open}
-      >
-        <InfoIcon />
-      </button>
 
       {open && (
         <div className="inv-notice-root" role="dialog" aria-modal="true" aria-labelledby="inv-notice-title">
@@ -159,16 +146,6 @@ export function DemoNotice({ project, storageKey }: DemoNoticeProps) {
   );
 }
 
-function InfoIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
-      <circle cx="12" cy="12" r="9.25" />
-      <path d="M12 10.75v6" strokeLinecap="round" />
-      <path d="M12 7.5h.01" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 function ShieldIcon() {
   return (
     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
@@ -184,30 +161,22 @@ function ShieldIcon() {
  * Tailwind theme being configured any particular way.
  */
 const DEMO_NOTICE_CSS = `
-.inv-notice-root, .inv-notice-trigger { --inv-orange: #E04B26; --inv-ink: #231f20; --inv-paper: #ffffff;
+.inv-notice-root { --inv-orange: #E04B26; --inv-ink: #231f20; --inv-paper: #ffffff;
   --inv-muted: #5b5f66; --inv-line: rgb(0 0 0 / 0.10); --inv-soft: rgb(0 0 0 / 0.04); }
 @media (prefers-color-scheme: dark) {
-  .inv-notice-root, .inv-notice-trigger { --inv-ink: #f4f4f5; --inv-paper: #231f20; --inv-muted: #a1a1aa;
+  .inv-notice-root { --inv-ink: #f4f4f5; --inv-paper: #231f20; --inv-muted: #a1a1aa;
     --inv-line: rgb(255 255 255 / 0.12); --inv-soft: rgb(255 255 255 / 0.06); }
 }
-html.dark .inv-notice-root, html.dark .inv-notice-trigger,
-[data-theme="dark"] .inv-notice-root, [data-theme="dark"] .inv-notice-trigger {
+html.dark .inv-notice-root,
+[data-theme="dark"] .inv-notice-root {
   --inv-ink: #f4f4f5; --inv-paper: #231f20; --inv-muted: #a1a1aa;
   --inv-line: rgb(255 255 255 / 0.12); --inv-soft: rgb(255 255 255 / 0.06);
 }
-html.light .inv-notice-root, html.light .inv-notice-trigger,
-[data-theme="light"] .inv-notice-root, [data-theme="light"] .inv-notice-trigger {
+html.light .inv-notice-root,
+[data-theme="light"] .inv-notice-root {
   --inv-ink: #231f20; --inv-paper: #ffffff; --inv-muted: #5b5f66;
   --inv-line: rgb(0 0 0 / 0.10); --inv-soft: rgb(0 0 0 / 0.04);
 }
-
-.inv-notice-trigger { position: fixed; right: 1rem; bottom: 1rem; z-index: 2147483000;
-  display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem;
-  border-radius: 9999px; border: 1px solid var(--inv-line); background: var(--inv-paper);
-  color: var(--inv-muted); cursor: pointer; box-shadow: 0 6px 20px rgb(0 0 0 / 0.10);
-  transition: color .2s ease, border-color .2s ease, transform .2s ease; }
-.inv-notice-trigger:hover { color: var(--inv-orange); border-color: var(--inv-orange); transform: translateY(-1px); }
-.inv-notice-trigger:focus-visible { outline: 2px solid var(--inv-orange); outline-offset: 2px; }
 
 .inv-notice-root { position: fixed; inset: 0; z-index: 2147483001; display: flex; align-items: center;
   justify-content: center; padding: 1.25rem; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
@@ -260,6 +229,6 @@ html.light .inv-notice-lockup-dark, [data-theme="light"] .inv-notice-lockup-dark
 
 @media (prefers-reduced-motion: reduce) {
   .inv-notice-scrim, .inv-notice-panel { animation: none; }
-  .inv-notice-trigger, .inv-notice-cta { transition: none; }
+  .inv-notice-cta { transition: none; }
 }
 `;
