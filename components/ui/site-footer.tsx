@@ -30,7 +30,7 @@ export interface SiteFooterProps {
   project: string;
   /** Day number in the challenge, 1 to 31. */
   day: number;
-  /** e.g. "23 September 2026". */
+  /** e.g. "23 October 2026". */
   date: string;
   /** One line in the fictional brand's own voice. */
   tagline: string;

@@ -7,7 +7,7 @@ import type { FooterColumn } from '@/components/ui/site-footer';
 export const FOOTER = {
   project: "The 31 Days Challenge",
   day: 0,
-  date: "September 2026",
+  date: "October 2026",
   tagline: "Thirty one days, thirty one builds, shipped from Botswana. No drafts, no skipped days, just the work in public.",
   accent: "#E04B26",
   tone: "auto" as const,

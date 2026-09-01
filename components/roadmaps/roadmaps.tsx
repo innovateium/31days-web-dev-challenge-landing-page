@@ -5,10 +5,9 @@ import { ChallengeItem } from '@/types/challengeItem';
 import { useState } from 'react';
 import ChallengeModal from '../ui/challengeModal';
 
-/** Days 1 to 30 fall in September 2026, day 31 lands on 1 October. */
+/** The whole challenge runs inside October 2026, so day N is simply N October. */
 function dateFor(day: string) {
-  const n = Number(day);
-  return n <= 30 ? `${n} Sep` : '1 Oct';
+  return `${Number(day)} Oct`;
 }
 
 export default function RoadMaps() {
